@@ -1,18 +1,13 @@
-import os
-import json
 from setuptools import setup, find_packages
 
-here = os.path.abspath(os.path.dirname(__file__))
-package = json.load(open(os.path.join(here, 'package.json')))
-
 setup(
-    name=package['name'].encode('utf8'),
-    version=package['version'].encode('utf8'),
-    url=package['homepage'].encode('utf8'),
-    keywords=' '.join(package['keywords']).encode('utf8'),
-    author=package['author']['name'].encode('utf8'),
-    author_email=package['author']['email'].encode('utf8'),
-    description=package['description'].encode('utf8'),
+    name='tweetjobs',
+    version='0.3.11',
+    url='http://github.com/chbrown/twilight',
+    keywords='twilight oauth crawling bot',
+    author='Christopher Brown',
+    author_email='io@henrian.com',
+    description='Twitter (crawling) tools.',
     long_description=open('README.rst').read(),
     license=open('LICENSE').read(),
     packages=find_packages(),

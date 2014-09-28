@@ -1,6 +1,3 @@
-.DS_Store
-twilight.egg-info/
+tweetjobs.egg-info/
 *.pyc
 dist/
-/log/
-/node_modules/
